@@ -37,8 +37,7 @@ var controller = function($http) {
   };
 };
 
-angular.module('angularComponentsPocApp')
-  .component('movieList', {
+angular.module('angularComponentsPocApp').component('movieList', {
     templateUrl: "views/components/movie-list.html",
     controllerAs: "movieListCtrl",
     controller: ["$http", controller]
