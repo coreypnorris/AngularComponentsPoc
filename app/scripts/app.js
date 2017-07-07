@@ -27,6 +27,9 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/detail/:id', {
+        template: '<movie-detail></movie-detail>',
+      })
       .otherwise({
         redirectTo: '/'
       });
